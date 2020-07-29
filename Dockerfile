@@ -1,7 +1,7 @@
 # Build image
 FROM busybox AS builder
 
-RUN wget https://repo.percona.com/apt/percona-release_latest.$(lsb_release -sc)_all.deb \
+RUN wget https://repo.percona.com/apt/percona-release_latest.buster_all.deb \
   -o /tmp/percona-release.deb
 
 # Container image
